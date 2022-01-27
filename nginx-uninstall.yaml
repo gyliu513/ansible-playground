@@ -1,0 +1,7 @@
+---
+- name: clear env
+  hosts: qb_rhel
+  gather_facts: false
+  tasks:
+  - name: unistall nginx
+    command: "apt remove nginx -y"
